@@ -1,0 +1,317 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Valuation Measures",
+        "align": "center",
+        "size": "xl"
+      }
+    ]
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Market Cap",
+                "color": "#aaaaaa",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "236.97 x 1000",
+                "wrap": true,
+                "align": "center"
+              }
+            ],
+            "flex": 3,
+            "alignItems": "center"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Enterprise Value",
+                "color": "#aaaaaa",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "237.08 x 800",
+                "wrap": true,
+                "align": "center"
+              }
+            ],
+            "flex": 3,
+            "alignItems": "center"
+          }
+        ],
+        "paddingTop": "5px",
+        "paddingBottom": "10px"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Trailing P/E",
+                "color": "#aaaaaa",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "244.43",
+                "wrap": true,
+                "align": "center"
+              }
+            ],
+            "flex": 3,
+            "alignItems": "center"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Forward P/E",
+                "color": "#aaaaaa",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "241.255",
+                "wrap": true,
+                "align": "center"
+              }
+            ],
+            "flex": 3,
+            "alignItems": "center"
+          }
+        ],
+        "paddingTop": "5px",
+        "paddingBottom": "10px"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Price/Sales (ttm)",
+                "color": "#aaaaaa",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "213.43 - 344.3",
+                "wrap": true,
+                "align": "center"
+              }
+            ],
+            "flex": 3,
+            "alignItems": "center"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Price/Book (mrq)",
+                "color": "#aaaaaa",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "233.87 - 241.99",
+                "wrap": true,
+                "align": "center"
+              }
+            ],
+            "flex": 3,
+            "alignItems": "center"
+          }
+        ],
+        "paddingTop": "5px",
+        "paddingBottom": "10px"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "PEG Ratio (5 yr expected)",
+                "color": "#aaaaaa",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "27,649,407",
+                "wrap": true,
+                "align": "center"
+              }
+            ],
+            "flex": 3,
+            "alignItems": "center"
+          }
+        ],
+        "paddingTop": "5px",
+        "paddingBottom": "10px"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Enterprise Value/Revenue",
+                "color": "#aaaaaa",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "27,649,407",
+                "wrap": true,
+                "align": "center"
+              }
+            ],
+            "flex": 3,
+            "alignItems": "center"
+          }
+        ],
+        "paddingTop": "5px",
+        "paddingBottom": "10px"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Enterprise Value/EBITDA",
+                "color": "#aaaaaa",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "27,649,407",
+                "wrap": true,
+                "align": "center"
+              }
+            ],
+            "flex": 3,
+            "alignItems": "center"
+          }
+        ],
+        "paddingTop": "5px",
+        "paddingBottom": "10px"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Back",
+              "text": "back"
+            },
+            "flex": 5
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Home",
+              "text": "home"
+            },
+            "flex": 5
+          }
+        ]
+      }
+    ]
+  },
+  "styles": {
+    "header": {
+      "backgroundColor": "#F0997E"
+    },
+    "body": {
+      "backgroundColor": "#F3EFEC"
+    },
+    "footer": {
+      "backgroundColor": "#DAD6D3"
+    }
+  }
+}

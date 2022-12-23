@@ -1,0 +1,55 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Enter Stock Symbol",
+        "align": "center",
+        "size": "xl"
+      }
+    ]
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Example",
+            "color": "#aaaaaa",
+            "align": "center",
+            "size": "lg"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "msft / MSFT",
+            "align": "center",
+            "size": "lg"
+          }
+        ],
+        "paddingTop": "3px"
+      }
+    ]
+  },
+  "styles": {
+    "header": {
+      "backgroundColor": "#F0997E"
+    },
+    "body": {
+      "backgroundColor": "#F3EFEC"
+    }
+  }
+}

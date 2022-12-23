@@ -1,0 +1,1065 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Fiscal Year",
+            "align": "center",
+            "size": "xl"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": " Fiscal Year Ends",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Most Recent Quarter (mrq)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          }
+        ],
+        "justifyContent": "space-evenly"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Back",
+                  "text": "back"
+                },
+                "flex": 5
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Home",
+                  "text": "home"
+                },
+                "flex": 5
+              }
+            ]
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Profitability",
+            "align": "center",
+            "size": "xl"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": " Profit Margin",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Operating Margin (ttm)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          }
+        ],
+        "justifyContent": "space-evenly"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Back",
+                  "text": "back"
+                },
+                "flex": 5
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Home",
+                  "text": "home"
+                },
+                "flex": 5
+              }
+            ]
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Management Effectiveness",
+            "align": "center",
+            "size": "xl"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Return on Assets (ttm)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Return on Equity (ttm)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          }
+        ],
+        "justifyContent": "space-evenly"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Back",
+                  "text": "back"
+                },
+                "flex": 5
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Home",
+                  "text": "home"
+                },
+                "flex": 5
+              }
+            ]
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Income Statement",
+            "align": "center",
+            "size": "xl"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": " Revenue (ttm)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Revenue Per Share (ttm)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Quarterly Revenue Growth (yoy)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Gross Profit (ttm)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "EBITDA",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Net Income Avi to Common (ttm)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Diluted EPS (ttm)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Quarterly Earnings Growth (yoy)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          }
+        ],
+        "justifyContent": "space-evenly"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Back",
+                  "text": "back"
+                },
+                "flex": 5
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Home",
+                  "text": "home"
+                },
+                "flex": 5
+              }
+            ]
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Balance Sheet",
+            "align": "center",
+            "size": "xl"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Total Cash (mrq)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Total Cash Per Share (mrq)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Total Debt (mrq)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Total Debt/Equity (mrq)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Current Ratio (mrq)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Book Value Per Share (mrq)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          }
+        ],
+        "justifyContent": "space-evenly"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Back",
+                  "text": "back"
+                },
+                "flex": 5
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Home",
+                  "text": "home"
+                },
+                "flex": 5
+              }
+            ]
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Cash Flow Statement",
+            "align": "center",
+            "size": "xl"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "  Operating Cash Flow (ttm)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Levered Free Cash Flow (ttm)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          }
+        ],
+        "justifyContent": "space-evenly"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Back",
+                  "text": "back"
+                },
+                "flex": 5
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Home",
+                  "text": "home"
+                },
+                "flex": 5
+              }
+            ]
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    }
+  ]
+}

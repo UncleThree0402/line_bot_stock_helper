@@ -1,0 +1,296 @@
+{
+  "type": "bubble",
+  "hero": {
+    "type": "image",
+    "url": "https://logo.clearbit.com/microsoft.com",
+    "size": "full"
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "MSFT",
+            "size": "xl",
+            "align": "center"
+          }
+        ],
+        "paddingAll": "0px",
+        "paddingBottom": "5px"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Ask",
+                "color": "#aaaaaa",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "236.97 x 1000",
+                "wrap": true,
+                "align": "center"
+              }
+            ],
+            "flex": 3,
+            "alignItems": "center"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Bid",
+                "color": "#aaaaaa",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "237.08 x 800",
+                "wrap": true,
+                "align": "center"
+              }
+            ],
+            "flex": 3,
+            "alignItems": "center"
+          }
+        ],
+        "paddingTop": "5px",
+        "paddingBottom": "10px"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Previous Close\t",
+                "color": "#aaaaaa",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "244.43",
+                "wrap": true,
+                "align": "center"
+              }
+            ],
+            "flex": 3,
+            "alignItems": "center"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Open",
+                "color": "#aaaaaa",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "241.255",
+                "wrap": true,
+                "align": "center"
+              }
+            ],
+            "flex": 3,
+            "alignItems": "center"
+          }
+        ],
+        "paddingTop": "5px",
+        "paddingBottom": "10px"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Day's Range",
+                "color": "#aaaaaa",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "213.43 - 344.3",
+                "wrap": true,
+                "align": "center"
+              }
+            ],
+            "flex": 3,
+            "alignItems": "center"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "52 Week Range",
+                "color": "#aaaaaa",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "233.87 - 241.99",
+                "wrap": true,
+                "align": "center"
+              }
+            ],
+            "flex": 3,
+            "alignItems": "center"
+          }
+        ],
+        "paddingTop": "5px",
+        "paddingBottom": "10px"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Volume",
+                "color": "#aaaaaa",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "27,649,407",
+                "wrap": true,
+                "align": "center"
+              }
+            ],
+            "flex": 3,
+            "alignItems": "center"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Market Cap",
+                "color": "#aaaaaa",
+                "align": "center"
+              },
+              {
+                "type": "text",
+                "text": "1.776T",
+                "wrap": true,
+                "align": "center"
+              }
+            ],
+            "flex": 3,
+            "alignItems": "center"
+          }
+        ],
+        "paddingTop": "5px",
+        "paddingBottom": "10px"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Summary",
+              "text": "summary"
+            },
+            "flex": 5
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Detail",
+              "text": "detail"
+            },
+            "flex": 5
+          }
+        ]
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "message",
+          "label": "Home",
+          "text": "home"
+        }
+      }
+    ]
+  },
+  "styles": {
+    "header": {
+      "backgroundColor": "#bbd0ff"
+    },
+    "body": {
+      "backgroundColor": "#F3EFEC"
+    },
+    "footer": {
+      "backgroundColor": "#DAD6D3"
+    }
+  }
+}
