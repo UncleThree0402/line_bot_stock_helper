@@ -4,7 +4,7 @@ from utils import send_text_message, sent_flex_message
 from linebot.models import FlexSendMessage
 import yfinance as yf
 from datetime import datetime
-
+from datetime import timezone
 
 user_id_buffer = {}
 
@@ -76,7 +76,7 @@ class TocMachine(GraphMachine):
         FlexMessage = json.load(open('json_file/detail.json', 'r', encoding='utf-8'))
         sent_flex_message(reply_token, FlexSendMessage('Summary', FlexMessage))
 
-    def is_search_result_back_to_summary(self, event):
+    def is_back_to_search_result(self, event):
         text = event.message.text
         return text.lower() == "back"
 
@@ -124,11 +124,136 @@ class TocMachine(GraphMachine):
         text = event.message.text
         return text.lower() == "financial highlights"
 
+    def is_back_to_detail(self, event):
+        text = event.message.text
+        return text.lower() == "back"
+
     def on_enter_financial_highlights(self, event):
         reply_token = event.reply_token
         FlexMessage = json.load(open('json_file/financial_highlights.json', 'r', encoding='utf-8'))
         FlexMessage["contents"][0]["body"]["contents"][0]["contents"][0]["contents"][1][
-            "text"] = f'{user_id_buffer[event.source.user_id]["enterpriseToEbitda"]:.3f}'
+            "text"] = datetime.fromtimestamp(user_id_buffer[event.source.user_id]["lastFiscalYearEnd"], tz=timezone.utc).strftime(
+            "%m/%d/%Y UTC")
+        FlexMessage["contents"][0]["body"]["contents"][2]["contents"][0]["contents"][1][
+            "text"] = datetime.fromtimestamp(user_id_buffer[event.source.user_id]["mostRecentQuarter"], tz=timezone.utc).strftime(
+            "%m/%d/%Y UTC")
+
+        FlexMessage["contents"][1]["body"]["contents"][0]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["profitMargins"]:.2%}'
+        FlexMessage["contents"][1]["body"]["contents"][2]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["operatingMargins"]:.2%}'
+
+        FlexMessage["contents"][2]["body"]["contents"][0]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["returnOnAssets"]:.2%}'
+        FlexMessage["contents"][2]["body"]["contents"][2]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["returnOnEquity"]:.2%}'
+
+        FlexMessage["contents"][3]["body"]["contents"][0]["contents"][0]["contents"][1][
+            "text"] = TocMachine.format_number(user_id_buffer[event.source.user_id]["totalRevenue"])
+        FlexMessage["contents"][3]["body"]["contents"][2]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["revenuePerShare"]}'
+        FlexMessage["contents"][3]["body"]["contents"][4]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["revenueQuarterlyGrowth"]}'
+        FlexMessage["contents"][3]["body"]["contents"][6]["contents"][0]["contents"][1][
+            "text"] = TocMachine.format_number(user_id_buffer[event.source.user_id]["grossProfits"])
+        FlexMessage["contents"][3]["body"]["contents"][8]["contents"][0]["contents"][1][
+            "text"] = TocMachine.format_number(user_id_buffer[event.source.user_id]["ebitda"])
+        FlexMessage["contents"][3]["body"]["contents"][10]["contents"][0]["contents"][1][
+            "text"] = TocMachine.format_number(user_id_buffer[event.source.user_id]["netIncomeToCommon"])
+        FlexMessage["contents"][3]["body"]["contents"][12]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["earningsQuarterlyGrowth"]:.2%}'
+
+        FlexMessage["contents"][4]["body"]["contents"][0]["contents"][0]["contents"][1][
+            "text"] = TocMachine.format_number(user_id_buffer[event.source.user_id]["totalCash"])
+        FlexMessage["contents"][4]["body"]["contents"][2]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["totalCashPerShare"]:.2f}'
+        FlexMessage["contents"][4]["body"]["contents"][4]["contents"][0]["contents"][1][
+            "text"] = TocMachine.format_number(user_id_buffer[event.source.user_id]["totalDebt"])
+        FlexMessage["contents"][4]["body"]["contents"][6]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["debtToEquity"]:.2f}'
+        FlexMessage["contents"][4]["body"]["contents"][8]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["currentRatio"]:.2f}'
+        FlexMessage["contents"][4]["body"]["contents"][10]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["bookValue"]:.2f}'
+
+        FlexMessage["contents"][5]["body"]["contents"][0]["contents"][0]["contents"][1][
+            "text"] = TocMachine.format_number(user_id_buffer[event.source.user_id]["operatingCashflow"])
+        FlexMessage["contents"][5]["body"]["contents"][2]["contents"][0]["contents"][1][
+            "text"] = TocMachine.format_number(user_id_buffer[event.source.user_id]["freeCashflow"])
+
+        sent_flex_message(reply_token, FlexSendMessage('Valuation Measures', FlexMessage))
+
+    def is_going_to_trading_information(self, event):
+        text = event.message.text
+        return text.lower() == "trading information"
+
+    def on_enter_trading_information(self, event):
+        reply_token = event.reply_token
+        FlexMessage = json.load(open('json_file/trading_information.json', 'r', encoding='utf-8'))
+
+        FlexMessage["contents"][0]["body"]["contents"][0]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["beta"]:.2f}'
+        FlexMessage["contents"][0]["body"]["contents"][2]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["52WeekChange"]:.2%}'
+        FlexMessage["contents"][0]["body"]["contents"][4]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["SandP52WeekChange"]:.2%}'
+        FlexMessage["contents"][0]["body"]["contents"][6]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["fiftyTwoWeekHigh"]:.2f}'
+        FlexMessage["contents"][0]["body"]["contents"][8]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["fiftyTwoWeekLow"]:.2f}'
+        FlexMessage["contents"][0]["body"]["contents"][10]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["fiftyDayAverage"]:.2f}'
+        FlexMessage["contents"][0]["body"]["contents"][12]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["twoHundredDayAverage"]:.2f}'
+
+        FlexMessage["contents"][1]["body"]["contents"][0]["contents"][0]["contents"][1][
+            "text"] = TocMachine.format_number(user_id_buffer[event.source.user_id]["averageVolume"])
+        FlexMessage["contents"][1]["body"]["contents"][2]["contents"][0]["contents"][1][
+            "text"] = TocMachine.format_number(user_id_buffer[event.source.user_id]["averageVolume10days"])
+        FlexMessage["contents"][1]["body"]["contents"][4]["contents"][0]["contents"][1][
+            "text"] = TocMachine.format_number(user_id_buffer[event.source.user_id]["sharesOutstanding"])
+        FlexMessage["contents"][1]["body"]["contents"][6]["contents"][0]["contents"][1][
+            "text"] = TocMachine.format_number(user_id_buffer[event.source.user_id]["impliedSharesOutstanding"])
+        FlexMessage["contents"][1]["body"]["contents"][8]["contents"][0]["contents"][1][
+            "text"] = TocMachine.format_number(user_id_buffer[event.source.user_id]["floatShares"])
+        FlexMessage["contents"][1]["body"]["contents"][10]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["heldPercentInsiders"]:.2%}'
+        FlexMessage["contents"][1]["body"]["contents"][12]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["heldPercentInstitutions"]:.2%}'
+        FlexMessage["contents"][1]["body"]["contents"][14]["contents"][0]["contents"][1][
+            "text"] = TocMachine.format_number(user_id_buffer[event.source.user_id]["sharesShort"])
+        FlexMessage["contents"][1]["body"]["contents"][16]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["shortRatio"]:.2f}'
+        FlexMessage["contents"][1]["body"]["contents"][18]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["shortPercentOfFloat"]:.2%}'
+
+
+        FlexMessage["contents"][2]["body"]["contents"][0]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["dividendRate"]:.2f}'
+        FlexMessage["contents"][2]["body"]["contents"][2]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["dividendYield"]:.2%}'
+        FlexMessage["contents"][2]["body"]["contents"][4]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["trailingAnnualDividendRate"]:.2f}'
+        FlexMessage["contents"][2]["body"]["contents"][6]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["trailingAnnualDividendYield"]:.2%}'
+        FlexMessage["contents"][2]["body"]["contents"][8]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["fiveYearAvgDividendYield"]:.2f}'
+        FlexMessage["contents"][2]["body"]["contents"][10]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["payoutRatio"]:.2%}'
+        FlexMessage["contents"][2]["body"]["contents"][12]["contents"][0]["contents"][1][
+            "text"] = datetime.fromtimestamp(user_id_buffer[event.source.user_id]["lastDividendDate"],
+                                             tz=timezone.utc).strftime(
+            "%m/%d/%Y UTC")
+        FlexMessage["contents"][2]["body"]["contents"][14]["contents"][0]["contents"][1][
+            "text"] = datetime.fromtimestamp(user_id_buffer[event.source.user_id]["exDividendDate"],
+                                             tz=timezone.utc).strftime(
+            "%m/%d/%Y UTC")
+        FlexMessage["contents"][2]["body"]["contents"][16]["contents"][0]["contents"][1][
+            "text"] = f'{user_id_buffer[event.source.user_id]["lastSplitFactor"]}'
+        FlexMessage["contents"][2]["body"]["contents"][18]["contents"][0]["contents"][1][
+            "text"] = datetime.fromtimestamp(user_id_buffer[event.source.user_id]["lastSplitDate"],
+                                             tz=timezone.utc).strftime(
+            "%m/%d/%Y UTC")
 
         sent_flex_message(reply_token, FlexSendMessage('Valuation Measures', FlexMessage))
 

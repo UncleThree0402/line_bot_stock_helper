@@ -1,0 +1,1039 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Stock Price History",
+            "align": "center",
+            "size": "xl"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": " Beta (5Y Monthly)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px",
+            "alignItems": "center"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "52-Week Change ",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px",
+            "alignItems": "center"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "S&P500 52-Week Change",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px",
+            "alignItems": "center"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "52 Week High",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px",
+            "alignItems": "center"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "52 Week Low",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px",
+            "alignItems": "center"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "50-Day Moving Average",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px",
+            "alignItems": "center"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "200-Day Moving Average",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px",
+            "alignItems": "center"
+          }
+        ],
+        "justifyContent": "space-evenly",
+        "alignItems": "center"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Back",
+                  "text": "back"
+                },
+                "flex": 5
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Home",
+                  "text": "home"
+                },
+                "flex": 5
+              }
+            ]
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Share Statistics",
+            "align": "center",
+            "size": "xl"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": " Avg Vol (3 month)",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Avg Vol (10 day) ",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Shares Outstanding",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Implied Shares Outstanding",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Float",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "% Held by Insiders",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "% Held by Institutions",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Shares Short",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Short Ratio",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Short % of Float",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          }
+        ],
+        "justifyContent": "space-evenly"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Back",
+                  "text": "back"
+                },
+                "flex": 5
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Home",
+                  "text": "home"
+                },
+                "flex": 5
+              }
+            ]
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Dividends & Splits",
+            "align": "center",
+            "size": "xl"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Forward Annual Dividend Rate",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Forward Annual Dividend Yield",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Trailing Annual Dividend Rate",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Trailing Annual Dividend Yield",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "5 Year Average Dividend Yield",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Payout Ratio",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Dividend Date",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Ex-Dividend Date",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Last Split Factor",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Last Split Date",
+                    "color": "#aaaaaa",
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "27,649,407",
+                    "wrap": true,
+                    "align": "center"
+                  }
+                ],
+                "flex": 3,
+                "alignItems": "center"
+              }
+            ],
+            "paddingTop": "5px",
+            "paddingBottom": "10px"
+          }
+        ],
+        "justifyContent": "space-evenly"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Back",
+                  "text": "back"
+                },
+                "flex": 5
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Home",
+                  "text": "home"
+                },
+                "flex": 5
+              }
+            ]
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    }
+  ]
+}

@@ -3,7 +3,8 @@ from fsm import TocMachine
 
 def create_machine():
     machine = TocMachine(
-        states=["home", "search", "search_result", "summary", "detail", "valuation_measures", "financial_highlights"],
+        states=["home", "search", "search_result", "summary", "detail",
+                "valuation_measures", "financial_highlights", "trading_information"],
         transitions=[
             {
                 "trigger": "advance",
@@ -40,10 +41,15 @@ def create_machine():
                 "source": "detail",
                 "dest": "valuation_measures",
                 "conditions": "is_going_to_valuation_measures",
+            }, {
+                "trigger": "advance",
+                "source": "detail",
+                "dest": "trading_information",
+                "conditions": "is_going_to_trading_information",
             },
             {
                 "trigger": "advance",
-                "source": ["financial_highlights", "valuation_measures"],
+                "source": ["financial_highlights", "valuation_measures", "trading_information"],
                 "dest": "detail",
                 "conditions": "is_back_to_detail",
             },
@@ -56,7 +62,7 @@ def create_machine():
             {
                 "trigger": "advance",
                 "source": ["search", "search_result", "summary", "valuation_measures", "detail",
-                           "financial_highlights"],
+                           "financial_highlights", "trading_information"],
                 "dest": "home",
                 "conditions": "is_going_to_home",
             },
