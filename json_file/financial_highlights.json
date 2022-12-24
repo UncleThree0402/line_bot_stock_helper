@@ -45,7 +45,8 @@
               }
             ],
             "paddingTop": "5px",
-            "paddingBottom": "10px"
+            "paddingBottom": "10px",
+            "alignItems": "center"
           },
           {
             "type": "separator"
@@ -76,10 +77,12 @@
               }
             ],
             "paddingTop": "5px",
-            "paddingBottom": "10px"
+            "paddingBottom": "10px",
+            "alignItems": "center"
           }
         ],
-        "justifyContent": "space-evenly"
+        "justifyContent": "space-evenly",
+        "alignItems": "center"
       },
       "footer": {
         "type": "box",
@@ -560,37 +563,6 @@
                   {
                     "type": "text",
                     "text": "Net Income Avi to Common (ttm)",
-                    "color": "#aaaaaa",
-                    "align": "center"
-                  },
-                  {
-                    "type": "text",
-                    "text": "27,649,407",
-                    "wrap": true,
-                    "align": "center"
-                  }
-                ],
-                "flex": 3,
-                "alignItems": "center"
-              }
-            ],
-            "paddingTop": "5px",
-            "paddingBottom": "10px"
-          },
-          {
-            "type": "separator"
-          },
-          {
-            "type": "box",
-            "layout": "horizontal",
-            "contents": [
-              {
-                "type": "box",
-                "layout": "vertical",
-                "contents": [
-                  {
-                    "type": "text",
-                    "text": "Diluted EPS (ttm)",
                     "color": "#aaaaaa",
                     "align": "center"
                   },
