@@ -1,17 +1,41 @@
 from transitions.extensions import GraphMachine
 import json
 from utils import send_text_message, sent_flex_message
-from linebot.models import FlexSendMessage
+from linebot.models import FlexSendMessage, ImageSendMessage
 import yfinance as yf
 from datetime import datetime
 from datetime import timezone
+import pandas as pd
+import mplfinance as mpf
+from imgurpython import ImgurClient
+from GoogleNews import GoogleNews
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
 
 user_id_buffer = {}
+chart_buffer = {}
 
 
 class TocMachine(GraphMachine):
     def __init__(self, **machine_configs):
         self.machine = GraphMachine(model=self, **machine_configs)
+
+    def is_going_to_home(self, event):
+        text = event.message.text
+        return text.lower() == "home"
+
+    def is_going_to_menu(self, event):
+        text = event.message.text
+        return text.lower() == "menu"
+
+    def on_enter_menu(self, event):
+        reply_token = event.reply_token
+        FlexMessage = json.load(open('json_file/home.json', 'r', encoding='utf-8'))
+        sent_flex_message(reply_token, FlexSendMessage('Home', FlexMessage))
+
+    def on_enter_home(self, event):
+        pass
 
     def is_going_to_search(self, event):
         text = event.message.text
@@ -80,10 +104,6 @@ class TocMachine(GraphMachine):
         text = event.message.text
         return text.lower() == "back"
 
-    def is_going_to_home(self, event):
-        text = event.message.text
-        return text.lower() == "home"
-
     def on_enter_home(self, event):
         user_id_buffer.pop(event.source.user_id)
 
@@ -132,10 +152,12 @@ class TocMachine(GraphMachine):
         reply_token = event.reply_token
         FlexMessage = json.load(open('json_file/financial_highlights.json', 'r', encoding='utf-8'))
         FlexMessage["contents"][0]["body"]["contents"][0]["contents"][0]["contents"][1][
-            "text"] = datetime.fromtimestamp(user_id_buffer[event.source.user_id]["lastFiscalYearEnd"], tz=timezone.utc).strftime(
+            "text"] = datetime.fromtimestamp(user_id_buffer[event.source.user_id]["lastFiscalYearEnd"],
+                                             tz=timezone.utc).strftime(
             "%m/%d/%Y UTC")
         FlexMessage["contents"][0]["body"]["contents"][2]["contents"][0]["contents"][1][
-            "text"] = datetime.fromtimestamp(user_id_buffer[event.source.user_id]["mostRecentQuarter"], tz=timezone.utc).strftime(
+            "text"] = datetime.fromtimestamp(user_id_buffer[event.source.user_id]["mostRecentQuarter"],
+                                             tz=timezone.utc).strftime(
             "%m/%d/%Y UTC")
 
         FlexMessage["contents"][1]["body"]["contents"][0]["contents"][0]["contents"][1][
@@ -227,7 +249,6 @@ class TocMachine(GraphMachine):
         FlexMessage["contents"][1]["body"]["contents"][18]["contents"][0]["contents"][1][
             "text"] = f'{user_id_buffer[event.source.user_id]["shortPercentOfFloat"]:.2%}'
 
-
         FlexMessage["contents"][2]["body"]["contents"][0]["contents"][0]["contents"][1][
             "text"] = f'{user_id_buffer[event.source.user_id]["dividendRate"]:.2f}'
         FlexMessage["contents"][2]["body"]["contents"][2]["contents"][0]["contents"][1][
@@ -255,7 +276,78 @@ class TocMachine(GraphMachine):
                                              tz=timezone.utc).strftime(
             "%m/%d/%Y UTC")
 
-        sent_flex_message(reply_token, FlexSendMessage('Valuation Measures', FlexMessage))
+        sent_flex_message(reply_token, FlexSendMessage('Trading Information Measures', FlexMessage))
+
+    def is_going_to_stock_chart(self, event):
+        text = event.message.text
+        return text.lower() == "stock chart"
+
+    def on_enter_stock_chart(self, event):
+        reply_token = event.reply_token
+        FlexMessage = json.load(open('json_file/stock_chart.json', 'r', encoding='utf-8'))
+        sent_flex_message(reply_token, FlexSendMessage('Stock Chart', FlexMessage))
+
+    def is_going_to_stock_chart_result(self, event):
+        chart_buffer[event.source.user_id] = event.message.text.lower()
+        return True
+
+    def on_enter_stock_chart_result(self, event):
+        reply_token = event.reply_token
+        tsm = yf.Ticker(user_id_buffer[event.source.user_id]["symbol"])
+        if chart_buffer[event.source.user_id] == "1m":
+            hist = tsm.history(period="1d", interval="1m")
+        elif chart_buffer[event.source.user_id] == "5m":
+            hist = tsm.history(period="5d", interval="5m")
+        elif chart_buffer[event.source.user_id] == "30m":
+            hist = tsm.history(period="1mo", interval="30m")
+        elif chart_buffer[event.source.user_id] == "1h":
+            hist = tsm.history(period="3mo", interval="1h")
+        elif chart_buffer[event.source.user_id] == "1d":
+            hist = tsm.history(period="6mo", interval="1d")
+        elif chart_buffer[event.source.user_id] == "1wk":
+            hist = tsm.history(period="2y", interval="1wk")
+        elif chart_buffer[event.source.user_id] == "1mo":
+            hist = tsm.history(period="5y", interval="1mo")
+        elif chart_buffer[event.source.user_id] == "3mo":
+            hist = tsm.history(period="10y", interval="3mo")
+        else:
+            hist = tsm.history(period="max", interval="3mo")
+
+        mpf.plot(hist, type='line', style='yahoo', savefig="test.png", volume=True)
+        client = ImgurClient("c065cb2b1511ce8", "61bff6f736bf57807987df100e32b7e32f991e71")
+        upload_image = client.upload_from_path("test.png")
+        sent_flex_message(reply_token, ImageSendMessage(original_content_url=upload_image["link"],
+                                                        preview_image_url=upload_image["link"]))
+        self.go_back()
+
+    def is_going_to_news(self, event):
+        text = event.message.text
+        return text.lower() == "news"
+
+    def on_enter_news(self, event):
+        reply_token = event.reply_token
+        FlexMessage = json.load(open('json_file/news.json', 'r', encoding='utf-8'))
+        news = GoogleNews(period='7d')
+        news.search(user_id_buffer[event.source.user_id]["symbol"])
+        result = news.result()
+
+        idx = 0
+        for res in result:
+            FlexMessage["contents"][idx]["body"]["contents"][0]["contents"][0]["contents"][1][
+                "text"] = res["title"]
+            FlexMessage["contents"][idx]["body"]["contents"][0]["contents"][2]["contents"][1][
+                "text"] = res["desc"]
+            FlexMessage["contents"][idx]["body"]["contents"][0]["contents"][4]["contents"][1][
+                "text"] = res["link"]
+            FlexMessage["contents"][idx]["body"]["contents"][0]["contents"][4]["contents"][1][
+                "action"]["uri"] = res["link"]
+
+            if idx == 4:
+                break
+            else:
+                idx += 1
+
+        sent_flex_message(reply_token, FlexSendMessage('Stock Chart', FlexMessage))
 
     @staticmethod
     def safe_num(num):

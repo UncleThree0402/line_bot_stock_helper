@@ -273,6 +273,33 @@
         ]
       },
       {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Stock Chart",
+              "text": "stock chart"
+            },
+            "flex": 5
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "News",
+              "text": "news"
+            },
+            "flex": 5
+          }
+        ]
+      },
+      {
         "type": "button",
         "action": {
           "type": "message",

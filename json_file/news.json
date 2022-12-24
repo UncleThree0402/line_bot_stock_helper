@@ -1,0 +1,640 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "News",
+            "align": "center",
+            "size": "xl"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Title : ",
+                    "color": "#aaaaaa",
+                    "offsetBottom": "3px"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Microsoft Co. (NASDAQ:MSFT) is Cerro Pacific Wealth Advisors LLC's 7th Largest Position",
+                    "wrap": true
+                  }
+                ],
+                "paddingAll": "5px"
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "News : ",
+                    "color": "#aaaaaa",
+                    "offsetBottom": "3px"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Cerro Pacific Wealth Advisors LLC lifted its holdings in shares of Microsoft Co. (NASDAQ:MSFT – Get Rating) by 4.4% in the 3rd quarter, according to its...",
+                    "wrap": true
+                  }
+                ],
+                "paddingAll": "5px",
+                "paddingTop": "10px"
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Website : ",
+                    "color": "#aaaaaa",
+                    "offsetBottom": "3px"
+                  },
+                  {
+                    "type": "text",
+                    "text": "https://www.etfdailynews.com/2022/12/24/guild-investment-management-inc-buys-100-shares-of-microsoft-co-nasdaqmsft/",
+                    "wrap": true,
+                    "action": {
+                      "type": "uri",
+                      "label": "Website",
+                      "uri": "https://www.etfdailynews.com/2022/12/24/guild-investment-management-inc-buys-100-shares-of-microsoft-co-nasdaqmsft/"
+                    }
+                  }
+                ],
+                "paddingAll": "5px",
+                "paddingTop": "10px"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Back",
+              "text": "back"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Home",
+              "text": "home"
+            }
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "News",
+            "align": "center",
+            "size": "xl"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Title : ",
+                    "color": "#aaaaaa",
+                    "offsetBottom": "3px"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Microsoft Co. (NASDAQ:MSFT) is Cerro Pacific Wealth Advisors LLC's 7th Largest Position",
+                    "wrap": true
+                  }
+                ],
+                "paddingAll": "5px"
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "News : ",
+                    "color": "#aaaaaa",
+                    "offsetBottom": "3px"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Cerro Pacific Wealth Advisors LLC lifted its holdings in shares of Microsoft Co. (NASDAQ:MSFT – Get Rating) by 4.4% in the 3rd quarter, according to its...",
+                    "wrap": true
+                  }
+                ],
+                "paddingAll": "5px",
+                "paddingTop": "10px"
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Website : ",
+                    "color": "#aaaaaa",
+                    "offsetBottom": "3px"
+                  },
+                  {
+                    "type": "text",
+                    "text": "https://www.etfdailynews.com/2022/12/24/guild-investment-management-inc-buys-100-shares-of-microsoft-co-nasdaqmsft/",
+                    "wrap": true,
+                    "action": {
+                      "type": "uri",
+                      "label": "Website",
+                      "uri": "https://www.etfdailynews.com/2022/12/24/guild-investment-management-inc-buys-100-shares-of-microsoft-co-nasdaqmsft/"
+                    }
+                  }
+                ],
+                "paddingAll": "5px",
+                "paddingTop": "10px"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Back",
+              "text": "back"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Home",
+              "text": "home"
+            }
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "News",
+            "align": "center",
+            "size": "xl"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Title : ",
+                    "color": "#aaaaaa",
+                    "offsetBottom": "3px"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Microsoft Co. (NASDAQ:MSFT) is Cerro Pacific Wealth Advisors LLC's 7th Largest Position",
+                    "wrap": true
+                  }
+                ],
+                "paddingAll": "5px"
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "News : ",
+                    "color": "#aaaaaa",
+                    "offsetBottom": "3px"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Cerro Pacific Wealth Advisors LLC lifted its holdings in shares of Microsoft Co. (NASDAQ:MSFT – Get Rating) by 4.4% in the 3rd quarter, according to its...",
+                    "wrap": true
+                  }
+                ],
+                "paddingAll": "5px",
+                "paddingTop": "10px"
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Website : ",
+                    "color": "#aaaaaa",
+                    "offsetBottom": "3px"
+                  },
+                  {
+                    "type": "text",
+                    "text": "https://www.etfdailynews.com/2022/12/24/guild-investment-management-inc-buys-100-shares-of-microsoft-co-nasdaqmsft/",
+                    "wrap": true,
+                    "action": {
+                      "type": "uri",
+                      "label": "Website",
+                      "uri": "https://www.etfdailynews.com/2022/12/24/guild-investment-management-inc-buys-100-shares-of-microsoft-co-nasdaqmsft/"
+                    }
+                  }
+                ],
+                "paddingAll": "5px",
+                "paddingTop": "10px"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Back",
+              "text": "back"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Home",
+              "text": "home"
+            }
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "News",
+            "align": "center",
+            "size": "xl"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Title : ",
+                    "color": "#aaaaaa",
+                    "offsetBottom": "3px"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Microsoft Co. (NASDAQ:MSFT) is Cerro Pacific Wealth Advisors LLC's 7th Largest Position",
+                    "wrap": true
+                  }
+                ],
+                "paddingAll": "5px"
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "News : ",
+                    "color": "#aaaaaa",
+                    "offsetBottom": "3px"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Cerro Pacific Wealth Advisors LLC lifted its holdings in shares of Microsoft Co. (NASDAQ:MSFT – Get Rating) by 4.4% in the 3rd quarter, according to its...",
+                    "wrap": true
+                  }
+                ],
+                "paddingAll": "5px",
+                "paddingTop": "10px"
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Website : ",
+                    "color": "#aaaaaa",
+                    "offsetBottom": "3px"
+                  },
+                  {
+                    "type": "text",
+                    "text": "https://www.etfdailynews.com/2022/12/24/guild-investment-management-inc-buys-100-shares-of-microsoft-co-nasdaqmsft/",
+                    "wrap": true,
+                    "action": {
+                      "type": "uri",
+                      "label": "Website",
+                      "uri": "https://www.etfdailynews.com/2022/12/24/guild-investment-management-inc-buys-100-shares-of-microsoft-co-nasdaqmsft/"
+                    }
+                  }
+                ],
+                "paddingAll": "5px",
+                "paddingTop": "10px"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Back",
+              "text": "back"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Home",
+              "text": "home"
+            }
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "News",
+            "align": "center",
+            "size": "xl"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Title : ",
+                    "color": "#aaaaaa",
+                    "offsetBottom": "3px"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Microsoft Co. (NASDAQ:MSFT) is Cerro Pacific Wealth Advisors LLC's 7th Largest Position",
+                    "wrap": true
+                  }
+                ],
+                "paddingAll": "5px"
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "News : ",
+                    "color": "#aaaaaa",
+                    "offsetBottom": "3px"
+                  },
+                  {
+                    "type": "text",
+                    "text": "Cerro Pacific Wealth Advisors LLC lifted its holdings in shares of Microsoft Co. (NASDAQ:MSFT – Get Rating) by 4.4% in the 3rd quarter, according to its...",
+                    "wrap": true
+                  }
+                ],
+                "paddingAll": "5px",
+                "paddingTop": "10px"
+              },
+              {
+                "type": "separator"
+              },
+              {
+                "type": "box",
+                "layout": "vertical",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Website : ",
+                    "color": "#aaaaaa",
+                    "offsetBottom": "3px"
+                  },
+                  {
+                    "type": "text",
+                    "text": "https://www.etfdailynews.com/2022/12/24/guild-investment-management-inc-buys-100-shares-of-microsoft-co-nasdaqmsft/",
+                    "wrap": true,
+                    "action": {
+                      "type": "uri",
+                      "label": "Website",
+                      "uri": "https://www.etfdailynews.com/2022/12/24/guild-investment-management-inc-buys-100-shares-of-microsoft-co-nasdaqmsft/"
+                    }
+                  }
+                ],
+                "paddingAll": "5px",
+                "paddingTop": "10px"
+              }
+            ]
+          }
+        ]
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Back",
+              "text": "back"
+            }
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Home",
+              "text": "home"
+            }
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    }
+  ]
+}
