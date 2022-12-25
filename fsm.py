@@ -129,7 +129,6 @@ class TocMachine(GraphMachine):
                                                         preview_image_url="https://i.imgur.com/GCW5dXs.png"))
         self.go_menu(event)
 
-
     def is_going_to_search_result(self, event):
         user_id_buffer[event.source.user_id] = yf.Ticker(event.message.text.lower()).info
         return True
@@ -671,34 +670,36 @@ class TocMachine(GraphMachine):
 
     def on_enter_stock_chart_result(self, event):
         reply_token = event.reply_token
-        tsm = yf.Ticker(user_id_buffer[event.source.user_id]["symbol"])
-        if chart_buffer[event.source.user_id] == "1m":
-            hist = tsm.history(period="1d", interval="1m")
-        elif chart_buffer[event.source.user_id] == "5m":
-            hist = tsm.history(period="5d", interval="5m")
-        elif chart_buffer[event.source.user_id] == "30m":
-            hist = tsm.history(period="1mo", interval="30m")
-        elif chart_buffer[event.source.user_id] == "1h":
-            hist = tsm.history(period="3mo", interval="1h")
-        elif chart_buffer[event.source.user_id] == "1d":
-            hist = tsm.history(period="6mo", interval="1d")
-        elif chart_buffer[event.source.user_id] == "1wk":
-            hist = tsm.history(period="2y", interval="1wk")
-        elif chart_buffer[event.source.user_id] == "1mo":
-            hist = tsm.history(period="5y", interval="1mo")
-        elif chart_buffer[event.source.user_id] == "3mo":
-            hist = tsm.history(period="10y", interval="3mo")
-        else:
-            hist = tsm.history(period="max", interval="3mo")
+        try:
+            tsm = yf.Ticker(user_id_buffer[event.source.user_id]["symbol"])
+            if chart_buffer[event.source.user_id] == "1m":
+                hist = tsm.history(period="1d", interval="1m")
+            elif chart_buffer[event.source.user_id] == "5m":
+                hist = tsm.history(period="5d", interval="5m")
+            elif chart_buffer[event.source.user_id] == "30m":
+                hist = tsm.history(period="1mo", interval="30m")
+            elif chart_buffer[event.source.user_id] == "1h":
+                hist = tsm.history(period="3mo", interval="1h")
+            elif chart_buffer[event.source.user_id] == "1d":
+                hist = tsm.history(period="6mo", interval="1d")
+            elif chart_buffer[event.source.user_id] == "1wk":
+                hist = tsm.history(period="2y", interval="1wk")
+            elif chart_buffer[event.source.user_id] == "1mo":
+                hist = tsm.history(period="5y", interval="1mo")
+            elif chart_buffer[event.source.user_id] == "3mo":
+                hist = tsm.history(period="10y", interval="3mo")
+            else:
+                hist = tsm.history(period="max", interval="3mo")
 
-        fig = mpf.figure(figsize=(15, 15))
-        mpf.plot(hist, type='line', style='yahoo', savefig=f"./stock_chart/{event.source.user_id}.png", volume=True)
-        client = ImgurClient("c065cb2b1511ce8", "61bff6f736bf57807987df100e32b7e32f991e71")
-        upload_image = client.upload_from_path(f"./stock_chart/{event.source.user_id}.png")
-        sent_flex_message(reply_token, ImageSendMessage(original_content_url=upload_image["link"],
-                                                        preview_image_url=upload_image["link"]))
+            fig = mpf.figure(figsize=(15, 15))
+            mpf.plot(hist, type='line', style='yahoo', savefig=f"./stock_chart/{event.source.user_id}.png", volume=True)
+            client = ImgurClient("c065cb2b1511ce8", "61bff6f736bf57807987df100e32b7e32f991e71")
+            upload_image = client.upload_from_path(f"./stock_chart/{event.source.user_id}.png")
+            sent_flex_message(reply_token, ImageSendMessage(original_content_url=upload_image["link"],
+                                                            preview_image_url=upload_image["link"]))
+        except:
+            send_text_message(reply_token, "Error! Retry or try other intervals")
         self.go_back()
-
 
     def is_going_to_news(self, event):
         text = event.message.text
