@@ -3,23 +3,24 @@ from fsm import TocMachine
 
 def create_machine():
     machine = TocMachine(
-        states=["home", "menu", "search", "search_result", "summary", "detail",
+        states=["user", "menu", "introduction", "search", "search_result", "summary", "detail",
                 "valuation_measures", "financial_highlights", "trading_information",
-                "stock_chart", "stock_chart_result", "news"],
+                "stock_chart", "stock_chart_result", "news", "show_fsm",
+                "top5", "top5news", "error"],
         transitions=[
             {
                 "trigger": "advance",
-                "source": "home",
+                "source": ["search", "search_result", "summary", "valuation_measures", "detail",
+                           "financial_highlights", "trading_information", "stock_chart", "news",
+                           "user", "introduction", "top5", "top5news", "error"],
                 "dest": "menu",
                 "conditions": "is_going_to_menu",
             },
-            {
-                "trigger": "advance",
-                "source": ["search", "search_result", "summary", "valuation_measures", "detail",
-                           "financial_highlights", "trading_information", "stock_chart", "news", "home"],
-                "dest": "home",
-                "conditions": "is_going_to_home",
-            },
+            {"trigger": "go_to_error",
+             "source": ["introduction", "search", "search_result", "summary", "detail",
+                        "valuation_measures", "financial_highlights", "trading_information",
+                        "stock_chart", "news", "show_fsm",
+                        "top5", "top5news"], "dest": "error"},
             {
                 "trigger": "advance",
                 "source": "menu",
@@ -28,7 +29,32 @@ def create_machine():
             },
             {
                 "trigger": "advance",
-                "source": "search",
+                "source": "menu",
+                "dest": "top5",
+                "conditions": "is_going_to_top5",
+            },
+            {
+                "trigger": "advance",
+                "source": "menu",
+                "dest": "top5news",
+                "conditions": "is_going_to_top5news",
+            },
+            {
+                "trigger": "advance",
+                "source": "menu",
+                "dest": "show_fsm",
+                "conditions": "is_going_to_show_fsm",
+            },
+            {"trigger": "go_menu", "source": ["show_fsm"], "dest": "menu"},
+            {
+                "trigger": "advance",
+                "source": "menu",
+                "dest": "introduction",
+                "conditions": "is_going_to_introduction",
+            },
+            {
+                "trigger": "advance",
+                "source": ["search", "top5"],
                 "dest": "search_result",
                 "conditions": "is_going_to_search_result",
             },
@@ -93,7 +119,7 @@ def create_machine():
             },
             {"trigger": "go_back", "source": "stock_chart_result", "dest": "stock_chart"},
         ],
-        initial="home",
+        initial="user",
         auto_transitions=False,
         show_conditions=True,
     )
