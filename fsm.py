@@ -692,9 +692,9 @@ class TocMachine(GraphMachine):
             hist = tsm.history(period="max", interval="3mo")
 
         fig = mpf.figure(figsize=(15, 15))
-        mpf.plot(hist, type='line', style='yahoo', savefig="test.png", volume=True)
+        mpf.plot(hist, type='line', style='yahoo', savefig=f"./stock_chart/{event.source.user_id}.png", volume=True)
         client = ImgurClient("c065cb2b1511ce8", "61bff6f736bf57807987df100e32b7e32f991e71")
-        upload_image = client.upload_from_path("test.png")
+        upload_image = client.upload_from_path(f"./stock_chart/{event.source.user_id}.png")
         sent_flex_message(reply_token, ImageSendMessage(original_content_url=upload_image["link"],
                                                         preview_image_url=upload_image["link"]))
         self.go_back()
