@@ -1,0 +1,432 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Top 5 Gainer & Top 5 Loser",
+        "align": "center",
+        "size": "md"
+      }
+    ]
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://i.imgur.com/n8lkUTS.jpeg",
+            "size": "full",
+            "aspectRatio": "15.8:10.5"
+          },
+          {
+            "type": "text",
+            "text": "Top Gainers",
+            "wrap": true,
+            "align": "center",
+            "size": "xl",
+            "color": "#0B6623",
+            "offsetTop": "6px"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "CORZ",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "0.11",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "44.17%",
+                "gravity": "center",
+                "align": "center"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Info",
+                  "text": "corz"
+                },
+                "height": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "CORZ",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "0.11",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "44.17%",
+                "gravity": "center",
+                "align": "center"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Info",
+                  "text": "corz"
+                },
+                "height": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "CORZ",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "0.11",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "44.17%",
+                "gravity": "center",
+                "align": "center"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Info",
+                  "text": "corz"
+                },
+                "height": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "CORZ",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "0.11",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "44.17%",
+                "gravity": "center",
+                "align": "center"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Info",
+                  "text": "corz"
+                },
+                "height": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "CORZ",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "0.11",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "44.17%",
+                "gravity": "center",
+                "align": "center"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Info",
+                  "text": "corz"
+                },
+                "height": "sm"
+              }
+            ]
+          }
+        ],
+        "paddingAll": "6px"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://i.imgur.com/N0EzZ1K.jpeg",
+            "size": "full",
+            "aspectRatio": "15.8:10.5"
+          },
+          {
+            "type": "text",
+            "text": "Top Loser",
+            "wrap": true,
+            "align": "center",
+            "size": "xl",
+            "color": "#7c0a02"
+          }
+        ]
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "CORZ",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "0.11",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "44.17%",
+                "gravity": "center",
+                "align": "center"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Info",
+                  "text": "corz"
+                },
+                "height": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "CORZ",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "0.11",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "44.17%",
+                "gravity": "center",
+                "align": "center"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Info",
+                  "text": "corz"
+                },
+                "height": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "CORZ",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "0.11",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "44.17%",
+                "gravity": "center",
+                "align": "center"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Info",
+                  "text": "corz"
+                },
+                "height": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "CORZ",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "0.11",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "44.17%",
+                "gravity": "center",
+                "align": "center"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Info",
+                  "text": "corz"
+                },
+                "height": "sm"
+              }
+            ]
+          },
+          {
+            "type": "box",
+            "layout": "horizontal",
+            "contents": [
+              {
+                "type": "text",
+                "text": "CORZ",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "0.11",
+                "align": "center",
+                "gravity": "center"
+              },
+              {
+                "type": "text",
+                "text": "44.17%",
+                "gravity": "center",
+                "align": "center"
+              },
+              {
+                "type": "button",
+                "action": {
+                  "type": "message",
+                  "label": "Info",
+                  "text": "corz"
+                },
+                "height": "sm"
+              }
+            ]
+          }
+        ],
+        "paddingAll": "6px"
+      }
+    ],
+    "paddingAll": "0px"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "message",
+          "label": "Menu",
+          "text": "menu"
+        }
+      }
+    ]
+  },
+  "styles": {
+    "header": {
+      "backgroundColor": "#F0997E"
+    },
+    "body": {
+      "backgroundColor": "#F3EFEC"
+    },
+    "footer": {
+      "backgroundColor": "#DAD6D3"
+    }
+  }
+}

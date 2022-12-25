@@ -21,8 +21,24 @@
         "type": "button",
         "action": {
           "type": "message",
+          "label": "Least 5 News",
+          "text": "top5news"
+        }
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "message",
+          "label": "Top 5 Gainer & Top 5 Loser",
+          "text": "top5"
+        }
+      },
+      {
+        "type": "button",
+        "action": {
+          "type": "message",
           "label": "Introduction",
-          "text": "hello"
+          "text": "introduction"
         }
       },
       {
@@ -30,7 +46,7 @@
         "action": {
           "type": "message",
           "label": "Show Fsm",
-          "text": "fsm"
+          "text": "show fsm"
         }
       }
     ]

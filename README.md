@@ -1,156 +1,96 @@
-# TOC Project 2020
+# Stonk (Stock Market Information Gathering LineBot)
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/dc7fa47fcd809b99d087/maintainability)](https://codeclimate.com/github/NCKU-CCS/TOC-Project-2020/maintainability)
+![stonk](./img/icon.png)
 
-[![Known Vulnerabilities](https://snyk.io/test/github/NCKU-CCS/TOC-Project-2020/badge.svg)](https://snyk.io/test/github/NCKU-CCS/TOC-Project-2020)
+## Introduction
 
-
-Template Code for TOC Project 2020
-
-A Line bot based on a finite state machine
-
-More details in the [Slides](https://hackmd.io/@TTW/ToC-2019-Project#) and [FAQ](https://hackmd.io/s/B1Xw7E8kN)
-
-## Setup
-
-### Prerequisite
-* Python 3.6
-* Pipenv
-* Facebook Page and App
-* HTTPS Server
-
-#### Install Dependency
-```sh
-pip3 install pipenv
-
-pipenv --three
-
-pipenv install
-
-pipenv shell
-```
-
-* pygraphviz (For visualizing Finite State Machine)
-    * [Setup pygraphviz on Ubuntu](http://www.jianshu.com/p/a3da7ecc5303)
-	* [Note: macOS Install error](https://github.com/pygraphviz/pygraphviz/issues/100)
-
-
-#### Secret Data
-You should generate a `.env` file to set Environment Variables refer to our `.env.sample`.
-`LINE_CHANNEL_SECRET` and `LINE_CHANNEL_ACCESS_TOKEN` **MUST** be set to proper values.
-Otherwise, you might not be able to run your code.
-
-#### Run Locally
-You can either setup https server or using `ngrok` as a proxy.
-
-#### a. Ngrok installation
-* [ macOS, Windows, Linux](https://ngrok.com/download)
-
-or you can use Homebrew (MAC)
-```sh
-brew cask install ngrok
-```
-
-**`ngrok` would be used in the following instruction**
-
-```sh
-ngrok http 8000
-```
-
-After that, `ngrok` would generate a https URL.
-
-#### Run the sever
-
-```sh
-python3 app.py
-```
-
-#### b. Servo
-
-Or You can use [servo](http://serveo.net/) to expose local servers to the internet.
-
+Stonk is a Line Bot which can help you to gather stock market information faster and help to become stonk in stock
+market!
 
 ## Finite State Machine
+
 ![fsm](./img/fsm.png)
 
 ## Usage
-The initial state is set to `user`.
 
-Every time `user` state is triggered to `advance` to another state, it will `go_back` to `user` state after the bot replies corresponding message.
+### Menu
 
-* user
-	* Input: "go to state1"
-		* Reply: "I'm entering state1"
+![menu](./img/menu.png)
 
-	* Input: "go to state2"
-		* Reply: "I'm entering state2"
+- Search : You can search a specific stock with a stock symbol.
+- Least 5 News : You can watch least 5 news which are about the stock market.
+- Top 5 Gainer & Top 5 Loser : It will show top 5 gainer and loser to help you find the perfect stock fot indaytrading.
+- Introduction : SAMPLE introduction.
+- Show Fsm : To get fsm graph.
 
-## Deploy
-Setting to deploy webhooks on Heroku.
+### Least 5 news
 
-### Heroku CLI installation
+![top5news](./img/top5news.png)
 
-* [macOS, Windows](https://devcenter.heroku.com/articles/heroku-cli)
+It will show news title, source and link, if you press the link you will be directed to the website.
 
-or you can use Homebrew (MAC)
-```sh
-brew tap heroku/brew && brew install heroku
-```
+### Top 5 Gainer & Top 5 Loser
 
-or you can use Snap (Ubuntu 16+)
-```sh
-sudo snap install --classic heroku
-```
+![top5news](./img/top5.png)
 
-### Connect to Heroku
+It will show top 5 gainer and loser, if you press info, you will be directed to stock information.
 
-1. Register Heroku: https://signup.heroku.com
+### Introduction
 
-2. Create Heroku project from website
+![introduction](./img/introduction.png)
 
-3. CLI Login
+A introduction.
 
-	`heroku login`
+### Show Fsm
 
-### Upload project to Heroku
+![show_fsm](./img/show_fsm.png)
 
-1. Add local project to Heroku project
+Show FSM.
 
-	heroku git:remote -a {HEROKU_APP_NAME}
+### Search
 
-2. Upload project
+![search](./img/search.png)
 
-	```
-	git add .
-	git commit -m "Add code"
-	git push -f heroku master
-	```
+You can type in any stock symbol you want, we will be directed to that stock information.
 
-3. Set Environment - Line Messaging API Secret Keys
+### Stock Information
 
-	```
-	heroku config:set LINE_CHANNEL_SECRET=your_line_channel_secret
-	heroku config:set LINE_CHANNEL_ACCESS_TOKEN=your_line_channel_access_token
-	```
+![stock_information](./img/stock_information.png)
 
-4. Your Project is now running on Heroku!
+Simple information.
 
-	url: `{HEROKU_APP_NAME}.herokuapp.com/callback`
+### Summary
 
-	debug command: `heroku logs --tail --app {HEROKU_APP_NAME}`
+![summary](./img/summary.png)
 
-5. If fail with `pygraphviz` install errors
+Summary about what this stock about.
 
-	run commands below can solve the problems
-	```
-	heroku buildpacks:set heroku/python
-	heroku buildpacks:add --index 1 heroku-community/apt
-	```
+### Stock Chart
 
-	refference: https://hackmd.io/@ccw/B1Xw7E8kN?type=view#Q2-如何在-Heroku-使用-pygraphviz
+![stock_chart](./img/stock_chart.png)
+![5m](./img/5m.png)
+
+Use interval you want, and it will send that graph to you.
+
+### New
+
+![news](./img/news.png)
+
+5 news about that stock.
+
+### Detail
+
+![detail](./img/detail.png)
+![vm](./img/vm.png)
+![fh](./img/fh.png)
+![ti](./img/ti.png)
+
+Detail information about the stock.
 
 ## Reference
-[Pipenv](https://medium.com/@chihsuan/pipenv-更簡單-更快速的-python-套件管理工具-135a47e504f4) ❤️ [@chihsuan](https://github.com/chihsuan)
+
+[Pipenv](https://medium.com/@chihsuan/pipenv-更簡單-更快速的-python-套件管理工具-135a47e504f4)
+❤️ [@chihsuan](https://github.com/chihsuan)
 
 [TOC-Project-2019](https://github.com/winonecheng/TOC-Project-2019) ❤️ [@winonecheng](https://github.com/winonecheng)
 

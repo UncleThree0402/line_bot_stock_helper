@@ -1,0 +1,100 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "Welcome To STONK!",
+        "align": "center",
+        "size": "xl"
+      }
+    ]
+  },
+  "body": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "align": "start",
+            "size": "lg",
+            "wrap": true,
+            "text": "Stonk is an bot which can help to gather stock market information faster and just in your line chat!"
+          }
+        ],
+        "paddingAll": "3px",
+        "paddingBottom": "6px"
+      },
+      {
+        "type": "separator"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "To Search Stock : Press or Type \"Search\" in menu",
+                "wrap": true
+              }
+            ],
+            "paddingTop": "3px",
+            "paddingBottom": "3px"
+          },
+          {
+            "type": "separator"
+          },
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "To Get FSM : Press or Type \"Show FSM\" in menu",
+                "wrap": true
+              }
+            ],
+            "paddingTop": "3px",
+            "paddingBottom": "3px"
+          }
+        ],
+        "paddingAll": "3px"
+      }
+    ]
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "message",
+          "label": "Menu",
+          "text": "menu"
+        }
+      }
+    ]
+  },
+  "styles": {
+    "header": {
+      "backgroundColor": "#F0997E"
+    },
+    "body": {
+      "backgroundColor": "#F3EFEC"
+    },
+    "footer": {
+      "backgroundColor": "#DAD6D3"
+    }
+  }
+}

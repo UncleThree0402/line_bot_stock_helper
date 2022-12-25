@@ -1,0 +1,550 @@
+{
+  "type": "carousel",
+  "contents": [
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Least 5 News",
+            "align": "center",
+            "size": "md"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Facebook's parent to settle Cambridge Analytica class-action case",
+                "wrap": true,
+                "gravity": "center",
+                "align": "center"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Source",
+                    "color": "#aaaaaa",
+                    "flex": 3
+                  },
+                  {
+                    "type": "text",
+                    "text": "www.bloomberg.com",
+                    "flex": 9
+                  }
+                ],
+                "paddingAll": "6px",
+                "paddingTop": "12px"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Link",
+                    "color": "#aaaaaa",
+                    "flex": 3,
+                    "gravity": "center",
+                    "wrap": true,
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "https://www.bloomberg.com/news/articles/2022-12-24/elon-musk-warns-against-margin-debt-on-mass-panic-risk?srnd=markets-vp",
+                    "flex": 9,
+                    "wrap": true,
+                    "gravity": "center",
+                    "align": "center",
+                    "action": {
+                      "type": "uri",
+                      "label": "action",
+                      "uri": "http://linecorp.com/"
+                    }
+                  }
+                ],
+                "paddingAll": "6px"
+              }
+            ],
+            "paddingAll": "6px"
+          }
+        ],
+        "paddingAll": "0px"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Menu",
+              "text": "menu"
+            }
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Least 5 News",
+            "align": "center",
+            "size": "md"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Facebook's parent to settle Cambridge Analytica class-action case",
+                "wrap": true,
+                "gravity": "center",
+                "align": "center"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Source",
+                    "color": "#aaaaaa",
+                    "flex": 3
+                  },
+                  {
+                    "type": "text",
+                    "text": "www.bloomberg.com",
+                    "flex": 9
+                  }
+                ],
+                "paddingAll": "6px",
+                "paddingTop": "12px"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Link",
+                    "color": "#aaaaaa",
+                    "flex": 3,
+                    "gravity": "center",
+                    "wrap": true,
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "https://www.bloomberg.com/news/articles/2022-12-24/elon-musk-warns-against-margin-debt-on-mass-panic-risk?srnd=markets-vp",
+                    "flex": 9,
+                    "wrap": true,
+                    "gravity": "center",
+                    "align": "center",
+                    "action": {
+                      "type": "uri",
+                      "label": "action",
+                      "uri": "http://linecorp.com/"
+                    }
+                  }
+                ],
+                "paddingAll": "6px"
+              }
+            ],
+            "paddingAll": "6px"
+          }
+        ],
+        "paddingAll": "0px"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Menu",
+              "text": "menu"
+            }
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Least 5 News",
+            "align": "center",
+            "size": "md"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Facebook's parent to settle Cambridge Analytica class-action case",
+                "wrap": true,
+                "gravity": "center",
+                "align": "center"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Source",
+                    "color": "#aaaaaa",
+                    "flex": 3
+                  },
+                  {
+                    "type": "text",
+                    "text": "www.bloomberg.com",
+                    "flex": 9
+                  }
+                ],
+                "paddingAll": "6px",
+                "paddingTop": "12px"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Link",
+                    "color": "#aaaaaa",
+                    "flex": 3,
+                    "gravity": "center",
+                    "wrap": true,
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "https://www.bloomberg.com/news/articles/2022-12-24/elon-musk-warns-against-margin-debt-on-mass-panic-risk?srnd=markets-vp",
+                    "flex": 9,
+                    "wrap": true,
+                    "gravity": "center",
+                    "align": "center",
+                    "action": {
+                      "type": "uri",
+                      "label": "action",
+                      "uri": "http://linecorp.com/"
+                    }
+                  }
+                ],
+                "paddingAll": "6px"
+              }
+            ],
+            "paddingAll": "6px"
+          }
+        ],
+        "paddingAll": "0px"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Menu",
+              "text": "menu"
+            }
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Least 5 News",
+            "align": "center",
+            "size": "md"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Facebook's parent to settle Cambridge Analytica class-action case",
+                "wrap": true,
+                "gravity": "center",
+                "align": "center"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Source",
+                    "color": "#aaaaaa",
+                    "flex": 3
+                  },
+                  {
+                    "type": "text",
+                    "text": "www.bloomberg.com",
+                    "flex": 9
+                  }
+                ],
+                "paddingAll": "6px",
+                "paddingTop": "12px"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Link",
+                    "color": "#aaaaaa",
+                    "flex": 3,
+                    "gravity": "center",
+                    "wrap": true,
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "https://www.bloomberg.com/news/articles/2022-12-24/elon-musk-warns-against-margin-debt-on-mass-panic-risk?srnd=markets-vp",
+                    "flex": 9,
+                    "wrap": true,
+                    "gravity": "center",
+                    "align": "center",
+                    "action": {
+                      "type": "uri",
+                      "label": "action",
+                      "uri": "http://linecorp.com/"
+                    }
+                  }
+                ],
+                "paddingAll": "6px"
+              }
+            ],
+            "paddingAll": "6px"
+          }
+        ],
+        "paddingAll": "0px"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Menu",
+              "text": "menu"
+            }
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    },
+    {
+      "type": "bubble",
+      "header": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "Least 5 News",
+            "align": "center",
+            "size": "md"
+          }
+        ]
+      },
+      "body": {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "box",
+            "layout": "vertical",
+            "contents": [
+              {
+                "type": "text",
+                "text": "Facebook's parent to settle Cambridge Analytica class-action case",
+                "wrap": true,
+                "gravity": "center",
+                "align": "center"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Source",
+                    "color": "#aaaaaa",
+                    "flex": 3
+                  },
+                  {
+                    "type": "text",
+                    "text": "www.bloomberg.com",
+                    "flex": 9
+                  }
+                ],
+                "paddingAll": "6px",
+                "paddingTop": "12px"
+              },
+              {
+                "type": "box",
+                "layout": "horizontal",
+                "contents": [
+                  {
+                    "type": "text",
+                    "text": "Link",
+                    "color": "#aaaaaa",
+                    "flex": 3,
+                    "gravity": "center",
+                    "wrap": true,
+                    "align": "center"
+                  },
+                  {
+                    "type": "text",
+                    "text": "https://www.bloomberg.com/news/articles/2022-12-24/elon-musk-warns-against-margin-debt-on-mass-panic-risk?srnd=markets-vp",
+                    "flex": 9,
+                    "wrap": true,
+                    "gravity": "center",
+                    "align": "center",
+                    "action": {
+                      "type": "uri",
+                      "label": "action",
+                      "uri": "http://linecorp.com/"
+                    }
+                  }
+                ],
+                "paddingAll": "6px"
+              }
+            ],
+            "paddingAll": "6px"
+          }
+        ],
+        "paddingAll": "0px"
+      },
+      "footer": {
+        "type": "box",
+        "layout": "horizontal",
+        "contents": [
+          {
+            "type": "button",
+            "action": {
+              "type": "message",
+              "label": "Menu",
+              "text": "menu"
+            }
+          }
+        ]
+      },
+      "styles": {
+        "header": {
+          "backgroundColor": "#F0997E"
+        },
+        "body": {
+          "backgroundColor": "#F3EFEC"
+        },
+        "footer": {
+          "backgroundColor": "#DAD6D3"
+        }
+      }
+    }
+  ]
+}

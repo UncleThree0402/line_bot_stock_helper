@@ -1,0 +1,47 @@
+{
+  "type": "bubble",
+  "header": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "text",
+        "text": "ERROR",
+        "align": "center",
+        "size": "xl"
+      }
+    ]
+  },
+  "hero": {
+    "type": "image",
+    "url": "https://i.imgur.com/dRMRFU8.jpeg",
+    "gravity": "center",
+    "size": "full",
+    "aspectRatio": "16:9"
+  },
+  "footer": {
+    "type": "box",
+    "layout": "horizontal",
+    "contents": [
+      {
+        "type": "button",
+        "action": {
+          "type": "message",
+          "label": "Back To Menu",
+          "text": "menu"
+        }
+      }
+    ]
+  },
+  "styles": {
+    "header": {
+      "backgroundColor": "#F0997E"
+    },
+    "body": {
+      "backgroundColor": "#F3EFEC"
+    },
+    "footer": {
+      "backgroundColor": "#DAD6D3"
+    }
+  }
+}

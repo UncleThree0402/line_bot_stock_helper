@@ -268,8 +268,8 @@
                 "type": "button",
                 "action": {
                   "type": "message",
-                  "label": "Home",
-                  "text": "home"
+                  "label": "Menu",
+                  "text": "menu"
                 },
                 "flex": 5
               }
@@ -641,8 +641,8 @@
                 "type": "button",
                 "action": {
                   "type": "message",
-                  "label": "Home",
-                  "text": "home"
+                  "label": "Menu",
+                  "text": "menu"
                 },
                 "flex": 5
               }
@@ -1014,8 +1014,8 @@
                 "type": "button",
                 "action": {
                   "type": "message",
-                  "label": "Home",
-                  "text": "home"
+                  "label": "Menu",
+                  "text": "menu"
                 },
                 "flex": 5
               }
