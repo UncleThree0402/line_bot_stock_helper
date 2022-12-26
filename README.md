@@ -2,6 +2,8 @@
 
 ![stonk](./img/icon.png)
 
+![qr](./img/qr.png)
+
 ## Introduction
 
 Stonk is a Line Bot which can help you to gather stock market information faster and help to become stonk in stock
